@@ -409,7 +409,7 @@ export const SalesTable = ({
     Promise.all([p1, p2, p3, p4]).then((results) => {
       let flatten = results.flat();
       console.log("result,", flatten);
-      setNewSums(flatten); // causing error still
+      setNewSums(flatten); 
     });
 
     //return newSums;
@@ -433,7 +433,7 @@ export const SalesTable = ({
 
   // waitAlittle().then(value=>{
   //   console.log('value', value)
-  //   //setNewSums((prev)=>[...prev, value]) //causing non stop looping problem
+  //   //setNewSums((prev)=>[...prev, value]) 
   //   console.log(newSums)
   // });
 
